@@ -22,12 +22,7 @@ class Photo {
     }
 }
 
-console.log("\nSteps 1-2")
-let photo1 = new Photo();
-console.log(photo1.toString());
 
-let photo2 = new Photo(12, 15);
-console.log(photo2.toString());
 
 class MattedPhoto extends Photo {
     constructor(width, height, colour) {
@@ -61,19 +56,12 @@ class FramedPhoto extends Photo {
     }
 }
 
-console.log("\nStep 4");
 
-let photo3 = new Photo();
-console.log(photo3.toString());
-let photo4 = new Photo(10, 8);
-console.log(photo4.toString());
-
-let photo5 = new MattedPhoto(8,10,"green");
-console.log(photo5.toString());
-let photo6 = new MattedPhoto(12,15,"blue");
-console.log(photo6.toString());
-
-let photo7 = new FramedPhoto(10,8,"gold","modern");
-console.log(photo7.toString());
-let photo8 = new FramedPhoto(8,10,"steel","classic");
-console.log(photo8.toString());
+export let photo1 = new Photo();
+export let photo2 = new Photo(12, 15);
+export let photo3 = new Photo();
+export let photo4 = new Photo(10, 8);
+export let photo5 = new MattedPhoto(8,10,"green");
+export let photo6 = new MattedPhoto(12,15,"blue");
+export let photo7 = new FramedPhoto(10,8,"gold","modern");
+export let photo8 = new FramedPhoto(8,10,"steel","bold");
